@@ -10,7 +10,7 @@ async function bootstrap() {
   app.useGlobalPipes(new ValidationPipe({ transform: true, whitelist: true }));
   app.use(cookieParser());
   app.enableCors({
-    origin: ['https://api.semaphore.co/api/v4'],
+    origin: ['https://ccldo-web-portal-iud4r.ondigitalocean.app', 'https://api.semaphore.co/api/v4'],
     credentials: true,
   });
   await app.listen(3000);
